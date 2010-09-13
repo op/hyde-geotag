@@ -67,10 +67,11 @@ Once the photo has been processed, you can retrieve the value by using
 
 Here's a simple example::
 
-  <ol>
+  <dl>
   {% for resource in page.node.media %}
       {% ifequal resource.file.kind "jpg" %}
-          <li>{{resource.url}}, {{resource.gps.long.value}},{{resource.gps.lat.value}}, {{resource.geotag.city}}, {{resource.geotag.country}}</li>
+          <dt>{{resource.url}} ({{resource.meta.gps.lat.value}},{{resource.meta.gps.long.value}})</dt>
+          <dd>{{resource.geotag.city}}, {{resource.geotag.country}}</dd>
      {% endifequal %}
   {% endfor %}
-  </ol>
+  </dl>
