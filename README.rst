@@ -2,10 +2,10 @@ geotagger for hyde
 ==================
 
 Automatically retrieves geodata for photos with required geodata in the EXIF
-metadata. It depends on python-geolocation_ and the hyde's pre-processor
+metadata. It depends on geolocation_ and the hyde's pre-processor
 ImageMetadata or ImageMetadataPyExiv2.
 
-.. _python-geolocation: http://github.com/op/python-geolocation/
+.. _geolocation: http://github.com/op/geolocation/
 
 Installation
 ------------
