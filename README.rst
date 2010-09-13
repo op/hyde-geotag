@@ -7,6 +7,11 @@ ImageMetadata or ImageMetadataPyExiv2.
 
 .. _geolocation: http://github.com/op/geolocation/
 
+The geodata retrieved will be cached in a DBM. Positions can be set to be
+rounded down to a precision to make fewer requests to the provider of geodata.
+There's also a simple rate-limiter in place to make sure we don't flood the
+provider with too many queries.
+
 Installation
 ------------
 
