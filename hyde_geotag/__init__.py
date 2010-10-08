@@ -134,6 +134,8 @@ class GeoTagger(object):
                 resource.geotag = RecursiveAttributes()
                 setattr(resource.geotag, 'city', city)
                 setattr(resource.geotag, 'country', country)
+                setattr(resource.geotag, 'lat', lat)
+                setattr(resource.geotag, 'lng', long)
 
         if teardown_db is not None:
             teardown_db(db)
